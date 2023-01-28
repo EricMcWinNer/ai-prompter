@@ -1,0 +1,13 @@
+extends layout
+
+
+
+block content
+  h1= title
+  p Welcome to #{title}
+  a(href='open-auth') Authorize GMail 4 real
+
+  script.
+      const play = () => {
+          window.location.href("open-auth")
+      }
